@@ -1,0 +1,5 @@
+name: local
+variables:
+  - name: baseUri
+    value: https://localhost:5001/api/v1
+    description: ""

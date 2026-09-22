@@ -12,7 +12,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 });
 builder.Services.AddCors();
 builder.Services.AddMediatR(opt => 
-    opt.RegisterServicesFromAssemblyContaining<GetEventList.Handler>());
+    opt.RegisterServicesFromAssemblyContaining<GetEventList.Handler>()
+);
 
 var app = builder.Build();
 

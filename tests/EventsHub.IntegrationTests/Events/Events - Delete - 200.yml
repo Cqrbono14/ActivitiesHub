@@ -1,10 +1,10 @@
 info:
-  name: Events - Get - 200
+  name: Events - Delete - 200
   type: http
-  seq: 2
+  seq: 6
 
 http:
-  method: GET
+  method: DELETE
   url: "{{baseUri}}/events/:eventId"
   params:
     - name: eventId
@@ -16,8 +16,13 @@ runtime:
   scripts:
     - type: tests
       code: |-
-        test("Status code is 200 OK", function() {
-          expect(res.getStatus()).to.equal(200);
+        test("Status code is 404 Not Found", function() {
+          expect(res.getStatus()).to.equal(404);
+        });
+
+        test("Response returns an array", function() {
+          const body = res.getBody();
+          expect(body).to.equal("The event was not found");
         });
 
 settings:

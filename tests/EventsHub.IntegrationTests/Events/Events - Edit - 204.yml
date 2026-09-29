@@ -10,7 +10,7 @@ http:
     type: json
     data: |-
       {
-        "id": "{{$guid}}",
+        "id": "11e61225-6e47-4401-aa78-57d6b04be0cf",
         "title": "{{$randomCatchPhrase}}",
         "date": "{{$randomDateFuture}}",
         "description": "{{$randomLoremParagraph}}",

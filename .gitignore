@@ -431,3 +431,8 @@ FodyWeavers.xsd
 *.db
 *.db-shm
 *.db-wal
+# Graphify machine-local state
+graphify-out/cache/
+graphify-out/cost.json
+graphify-out/.graphify_python
+graphify-out/.graphify_root

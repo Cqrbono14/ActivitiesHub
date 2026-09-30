@@ -1,4 +1,4 @@
-using AutoMapper;
+using EventsHub.Application.Core;
 using EventsHub.Domain;
 using EventsHub.Persistence;
 using MediatR;
@@ -12,7 +12,7 @@ namespace EventsHub.Application.Events.Commands
             public required Event Event { get; set; }
         }
 
-        public class Handler(AppDbContext context, IMapper mapper) : IRequestHandler<Command>
+        public class Handler(AppDbContext context, IApplicationMapper mapper) : IRequestHandler<Command>
         {
             public async Task Handle(Command request, CancellationToken cancellationToken)
             {

@@ -1,5 +1,15 @@
 # React + TypeScript + Vite
 
+## Graphify before frontend edits
+
+From the repository root, query the graph before creating or changing any file in `web/`:
+
+```powershell
+graphify query "How <xComponent> connects with <yComponent>?"
+```
+
+Use actual component names, for example `graphify query "How App.tsx connects with main.tsx?"`. The graph shows that `main.tsx` imports `App.tsx`; inspect the source when you need more detail. If the graph is missing, run `$graphify .` in Codex from the repository root. See the [repository workflow](../README.md#graphify-before-edits).
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:

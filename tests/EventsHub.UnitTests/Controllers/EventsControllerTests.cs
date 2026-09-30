@@ -1,72 +1,72 @@
-using System.Runtime.CompilerServices;
 using EventsHub.API.Controllers;
+using EventsHub.Application.Events.Queries;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace EventsHub.UnitTests.Controllers
+namespace EventsHub.UnitTests.Controllers;
+
+[TestFixture]
+public class EventsControllerTests
 {
-    [TestFixture]
-    public class EventsControllerTests
+    private EventsController _eventsController = null!;
+    private ServiceProvider _services = null!;
+
+    [SetUp]
+    public void Setup()
     {
-        private EventsController _eventsController;
-
-        [SetUp]
-        public void Setup()
+        _services = new ServiceCollection()
+            .AddSingleton(GlobalTestSetup.AppDbContext)
+            .AddLogging()
+            .AddMediatR(config => config.RegisterServicesFromAssemblyContaining<GetEventList.Handler>())
+            .BuildServiceProvider();
+        _eventsController = new EventsController
         {
-            _eventsController = new EventsController(GlobalTestSetup.AppDbContext);
-        }
-
-        [Test]
-        public async Task GetEventsAsync_WhenEventsExists_ReturnAllEvents()
-        {
-            // Arrange
-            var expectedCount = await GlobalTestSetup.AppDbContext.Events.CountAsync();
-
-            // Act
-            var result = await _eventsController.GetEventsAsync();
-
-            // Assert
-            Assert.That(result.Value, Is.Not.Null);
-            Assert.That(result.Value, Has.Count.EqualTo(expectedCount));
-        }
-
-        [Test]
-        public async Task GetEventDetailAsync_WhenEventExists_ReturnMatchingEvent()
-        {
-            // Arrange
-            var existing = await GlobalTestSetup.AppDbContext.Events.FirstAsync();
-
-            // Act
-            var result = await _eventsController.GetEventDetailAsync(existing.Id);
-
-            // Assert
-            Assert.That(result.Value, Is.Not.Null);
-            Assert.Multiple(() =>
+            ControllerContext = new ControllerContext
             {
-                Assert.That(result.Value.Id, Is.EqualTo(existing.Id));
-                Assert.That(result.Value.Title, Is.EqualTo(existing.Title));
-            });
-        }
+                HttpContext = new DefaultHttpContext { RequestServices = _services }
+            }
+        };
+    }
 
-        [Test]
-        public async Task GetEventDetailAsync_WhenEventDoesntExist_ReturnsNotFound()
+    [TearDown]
+    public void TearDown() => _services.Dispose();
+
+    [Test]
+    public async Task GetEventsAsync_WhenEventsExists_ReturnAllEvents()
+    {
+        var expectedCount = await GlobalTestSetup.AppDbContext.Events.CountAsync();
+
+        var result = await _eventsController.GetEventsAsync(CancellationToken.None);
+
+        Assert.That(result.Value, Is.Not.Null);
+        Assert.That(result.Value, Has.Count.EqualTo(expectedCount));
+    }
+
+    [Test]
+    public async Task GetEventDetailAsync_WhenEventExists_ReturnMatchingEvent()
+    {
+        var existing = await GlobalTestSetup.AppDbContext.Events.FirstAsync();
+
+        var result = await _eventsController.GetEventDetailAsync(existing.Id);
+
+        Assert.That(result.Value, Is.Not.Null);
+        Assert.Multiple(() =>
         {
-            // Arrange
-            var nonExistentId = Guid.NewGuid().ToString();
+            Assert.That(result.Value.Id, Is.EqualTo(existing.Id));
+            Assert.That(result.Value.Title, Is.EqualTo(existing.Title));
+        });
+    }
 
-            // Act
-            var result = await _eventsController.GetEventDetailAsync(nonExistentId);
+    [Test]
+    public void GetEventDetailAsync_WhenEventDoesntExist_ThrowsNotFoundError()
+    {
+        var nonExistentId = Guid.NewGuid().ToString();
 
-            // Assert
-            Assert.That(result.Result, Is.InstanceOf<NotFoundObjectResult>());
+        var exception = Assert.ThrowsAsync<Exception>(() =>
+            _eventsController.GetEventDetailAsync(nonExistentId));
 
-            var notFoundResult = (NotFoundObjectResult)result.Result;
-
-            Assert.Multiple(() =>
-            {
-                Assert.That(notFoundResult.Value, Is.EqualTo("The event was not found"));
-                Assert.That(notFoundResult.StatusCode, Is.EqualTo(404));
-            });
-        }
+        Assert.That(exception!.Message, Is.EqualTo("Activity not found"));
     }
 }

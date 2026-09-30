@@ -6,7 +6,7 @@
   "4": "EventsHub.UnitTests.csproj",
   "5": ".GetEventsAsync",
   "6": "baseUri = https://localhost:5001/api/v1",
-  "7": "AppDbContextModelSnapshot",
+  "7": "20260829022218_InitialCreate.Designer.cs",
   "8": "compilerOptions",
   "9": "Command",
   "10": "devDependencies",
@@ -22,7 +22,7 @@
   "20": "Git branch",
   "21": "openspec-explore/SKILL.md",
   "22": "ADDED Requirements",
-  "23": "EventsHubBaseController",
+  "23": "Handler",
   "24": "Domain event",
   "25": "EventsHub.Domain layer",
   "26": "Layered platform illustration",
@@ -52,5 +52,10 @@
   "50": "openspec-sync-specs/SKILL.md",
   "51": "openspec-update-change/SKILL.md",
   "52": "automapper",
-  "53": "system_runtime_compilerservices"
+  "53": "system_runtime_compilerservices",
+  "54": "Handler",
+  "55": "Proposal",
+  "56": "IRequest",
+  "57": ".CreateCopiesAllEventProperties",
+  "58": "Tasks"
 }

@@ -36,9 +36,9 @@
     "semantic_hash": "5c35f77b673784c2439cff159b77b97c"
   },
   "src/EventsHub.API/Program.cs": {
-    "mtime": 1790744788.2319317,
-    "seen": 1790744931.9613197,
-    "ast_hash": "03c4bb2f01af8119e8351e1a6a95675b",
+    "mtime": 1790745039.996164,
+    "seen": 1790745117.146503,
+    "ast_hash": "70324a9abeb3aca12910f111e42d1fed",
     "semantic_hash": ""
   },
   "src/EventsHub.API/Properties/launchSettings.json": {
@@ -66,9 +66,9 @@
     "semantic_hash": "d024437fd95cc40dac98fb55ca33550d"
   },
   "src/EventsHub.Application/EventsHub.Application.csproj": {
-    "mtime": 1790744788.238484,
-    "seen": 1790744931.9613352,
-    "ast_hash": "5b0a294faeabc92eafb65678bfbf05c5",
+    "mtime": 1790745093.6227634,
+    "seen": 1790745117.1465204,
+    "ast_hash": "ee88e2ded16f8ae4364f9b10b5726c62",
     "semantic_hash": ""
   },
   "src/EventsHub.Application/Events/Commands/CreateEvent.cs": {
@@ -84,9 +84,9 @@
     "semantic_hash": "f9e3bfac9dc70c00ce387721298695cf"
   },
   "src/EventsHub.Application/Events/Commands/EditEvent.cs": {
-    "mtime": 1790744788.2273297,
-    "seen": 1790744931.9613395,
-    "ast_hash": "cf298160ffbf233648415f5d2c72efa5",
+    "mtime": 1790745093.6186593,
+    "seen": 1790745117.1465244,
+    "ast_hash": "f0121671110722ac13c1e02d354b0a85",
     "semantic_hash": ""
   },
   "src/EventsHub.Application/Events/Queries/GetEventDetails.cs": {
@@ -180,9 +180,9 @@
     "semantic_hash": "056e54e7f92090f8c0f4e533ca3b96be"
   },
   "tests/EventsHub.UnitTests/Controllers/EventsControllerTests.cs": {
-    "mtime": 1790744627.2151399,
-    "seen": 1790744931.9613607,
-    "ast_hash": "9e5f35278f1568d1515e6fcbac742cc4",
+    "mtime": 1790745093.6227634,
+    "seen": 1790745117.1465461,
+    "ast_hash": "a823faf1d2313d7d2faf840e3fce9648",
     "semantic_hash": ""
   },
   "tests/EventsHub.UnitTests/EventsHub.UnitTests.csproj": {
@@ -486,9 +486,9 @@
     "semantic_hash": ""
   },
   "src/EventsHub.Application/Core/EventToEventProfile.cs": {
-    "mtime": 1790744735.0115452,
-    "seen": 1790744931.9613304,
-    "ast_hash": "8e810cb86c54e4405669819144f9ac87",
+    "mtime": 1790745093.6227634,
+    "seen": 1790745117.1465147,
+    "ast_hash": "b13e2d3eac3e8db0ef5f291d26433e15",
     "semantic_hash": ""
   },
   "src/EventsHub.Application/Core/IApplicationMapper.cs": {
@@ -516,15 +516,15 @@
     "semantic_hash": ""
   },
   "tests/EventsHub.UnitTests/Mapping/EditEventMappingTests.cs": {
-    "mtime": 1790744825.0240252,
-    "seen": 1790744931.961367,
-    "ast_hash": "939c356d41e5923a693d5278cf79af3f",
+    "mtime": 1790745093.6227634,
+    "seen": 1790745117.1465514,
+    "ast_hash": "efaf628f59e703745a2d2923a161d8bb",
     "semantic_hash": ""
   },
   "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs": {
-    "mtime": 1790744764.127361,
-    "seen": 1790744931.9613678,
-    "ast_hash": "feb224342d6518e1e14d0ce08b5ffc32",
+    "mtime": 1790745093.6227634,
+    "seen": 1790745117.1465526,
+    "ast_hash": "b739b81b3208a988df2a5562771fd204",
     "semantic_hash": ""
   },
   ".agents/skills/openspec-apply-change/SKILL.md": {
@@ -564,9 +564,9 @@
     "semantic_hash": ""
   },
   "docs/guides/application-mapping.md": {
-    "mtime": 1790744688.4519997,
-    "seen": 1790744931.9614131,
-    "ast_hash": "1730e84dad4270441eb76100f365e0fb",
+    "mtime": 1790745093.6227634,
+    "seen": 1790745117.146598,
+    "ast_hash": "059e447ba1b808ba52ac36782d005b1b",
     "semantic_hash": ""
   },
   "openspec/changes/replace-automapper-with-custom-mapper/.openspec.yaml": {
@@ -594,9 +594,9 @@
     "semantic_hash": ""
   },
   "openspec/changes/replace-automapper-with-custom-mapper/tasks.md": {
-    "mtime": 1790744896.1908667,
-    "seen": 1790744931.9614198,
-    "ast_hash": "9eee46f74c30e3008a0ab0f6640d8726",
+    "mtime": 1790745039.996164,
+    "seen": 1790745117.1466067,
+    "ast_hash": "ecc9a2795f63ef250589256af53d0b68",
     "semantic_hash": ""
   },
   "openspec/config.yaml": {

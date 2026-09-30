@@ -52,8 +52,8 @@
   },
   "nodes": [
     {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_eventshub_persistence_migrations_initialcreate",
-      "label": "InitialCreate",
+      "id": "src_eventshub_api_controllers_eventshubbasecontroller_eventshub_api_controllers_eventshubbasecontroller",
+      "label": "EventsHubBaseController",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
@@ -61,54 +61,130 @@
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
       "metadata": {
-        "is_partial": true,
-        "namespace": "EventsHub.Persistence.Migrations",
+        "namespace": "EventsHub.API.Controllers",
         "scope_chain": [
-          "s296"
+          "s51"
         ]
       },
-      "norm_label": "initialcreate",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
-      "source_location": "L13"
+      "norm_label": "eventshubbasecontroller",
+      "source_file": "src/EventsHub.API/Controllers/EventsHubBaseController.cs",
+      "source_location": "L6"
     },
     {
-      "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_command",
+      "id": "src_eventshub_api_controllers_weatherforecastcontroller_eventshub_api_controllers_weatherforecastcontroller",
+      "label": "WeatherForecastController",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.API.Controllers",
+        "scope_chain": [
+          "s35"
+        ]
+      },
+      "norm_label": "weatherforecastcontroller",
+      "source_file": "src/EventsHub.API/Controllers/WeatherForecastController.cs",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_command",
       "label": "Command",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
       "file_type": "code",
       "metadata": {
         "is_nested_type": true,
         "namespace": "EventsHub.Application.Events.Commands",
         "scope_chain": [
-          "s73"
+          "s48"
         ]
       },
       "norm_label": "command",
-      "source_file": "src/EventsHub.Application/Events/Commands/CreateEvent.cs",
-      "source_location": "L9"
+      "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
+      "source_location": "L8"
     },
     {
-      "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_createevent",
-      "label": "CreateEvent",
+      "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_deleteevent",
+      "label": "DeleteEvent",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
       "file_type": "code",
       "metadata": {
         "namespace": "EventsHub.Application.Events.Commands",
         "scope_chain": [
+          "s48"
+        ]
+      },
+      "norm_label": "deleteevent",
+      "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_geteventdetails",
+      "label": "GetEventDetails",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
           "s73"
         ]
       },
-      "norm_label": "createevent",
-      "source_file": "src/EventsHub.Application/Events/Commands/CreateEvent.cs",
+      "norm_label": "geteventdetails",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
       "source_location": "L7"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_query",
+      "label": "Query",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": "query",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_eventshub_persistence_dbinitializer_eventshub_persistence_dbinitializer",
+      "label": "DbInitializer",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Persistence",
+        "scope_chain": [
+          "s27"
+        ]
+      },
+      "norm_label": "dbinitializer",
+      "source_file": "src/EventsHub.Persistence/DbInitializer.cs",
+      "source_location": "L5"
     },
     {
       "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_handler",
@@ -131,45 +207,6 @@
       "source_location": "L14"
     },
     {
-      "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_command",
-      "label": "Command",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s48"
-        ]
-      },
-      "norm_label": "command",
-      "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_deleteevent",
-      "label": "DeleteEvent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s48"
-        ]
-      },
-      "norm_label": "deleteevent",
-      "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
-      "source_location": "L6"
-    },
-    {
       "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_handler",
       "label": "Handler",
       "_callable": true,
@@ -188,124 +225,6 @@
       "norm_label": "handler",
       "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
       "source_location": "L13"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_geteventdetails",
-      "label": "GetEventDetails",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s73"
-        ]
-      },
-      "norm_label": "geteventdetails",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_handler",
-      "label": "Handler",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s73"
-        ]
-      },
-      "norm_label": "handler",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
-      "source_location": "L14"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_query",
-      "label": "Query",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s73"
-        ]
-      },
-      "norm_label": "query",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_geteventlist",
-      "label": "GetEventList",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s148"
-        ]
-      },
-      "norm_label": "geteventlist",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_handler",
-      "label": "Handler",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s148"
-        ]
-      },
-      "norm_label": "handler",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
-      "source_location": "L13"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_query",
-      "label": "Query",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s148"
-        ]
-      },
-      "norm_label": "query",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
-      "source_location": "L11"
     },
     {
       "id": "src_eventshub_persistence_appdbcontext_eventshub_persistence_appdbcontext",
@@ -338,71 +257,12 @@
       "metadata": {
         "namespace": "EventsHub.Application.Core",
         "scope_chain": [
-          "s28"
+          "s25"
         ]
       },
       "norm_label": "eventtoeventprofile",
       "source_file": "src/EventsHub.Application/Core/EventToEventProfile.cs",
       "source_location": "L5"
-    },
-    {
-      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_command",
-      "label": "Command",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s111"
-        ]
-      },
-      "norm_label": "command",
-      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_editevent",
-      "label": "EditEvent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s111"
-        ]
-      },
-      "norm_label": "editevent",
-      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_handler",
-      "label": "Handler",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "is_nested_type": true,
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s111"
-        ]
-      },
-      "norm_label": "handler",
-      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
-      "source_location": "L15"
     },
     {
       "id": "src_eventshub_domain_event_eventshub_domain_event",
@@ -422,25 +282,6 @@
       "norm_label": "event",
       "source_file": "src/EventsHub.Domain/Event.cs",
       "source_location": "L3"
-    },
-    {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests",
-      "label": "EventToEventProfileTests",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.UnitTests.Mapping",
-        "scope_chain": [
-          "s110"
-        ]
-      },
-      "norm_label": "eventtoeventprofiletests",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
-      "source_location": "L7"
     },
     {
       "id": "src_eventshub_application_core_applicationmapper_eventshub_application_core_applicationmapper",
@@ -614,25 +455,6 @@
       "source_location": "L91"
     },
     {
-      "id": "src_eventshub_persistence_dbinitializer_eventshub_persistence_dbinitializer",
-      "label": "DbInitializer",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": ".HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Persistence",
-        "scope_chain": [
-          "s27"
-        ]
-      },
-      "norm_label": "dbinitializer",
-      "source_file": "src/EventsHub.Persistence/DbInitializer.cs",
-      "source_location": "L5"
-    },
-    {
       "id": "tests_eventshub_unittests_globaltestsetup_eventshub_unittests_globaltestsetup",
       "label": "GlobalTestSetup",
       "_callable": true,
@@ -663,7 +485,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Mapping",
         "scope_chain": [
-          "s250"
+          "s247"
         ]
       },
       "norm_label": "editeventmappingtests",
@@ -690,42 +512,24 @@
       "source_location": "L3"
     },
     {
-      "id": "src_eventshub_api_controllers_eventshubbasecontroller_eventshub_api_controllers_eventshubbasecontroller",
-      "label": "EventsHubBaseController",
+      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_handler",
+      "label": "Handler",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
+      "community_name": "Handler",
       "file_type": "code",
       "metadata": {
-        "namespace": "EventsHub.API.Controllers",
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Commands",
         "scope_chain": [
-          "s51"
+          "s108"
         ]
       },
-      "norm_label": "eventshubbasecontroller",
-      "source_file": "src/EventsHub.API/Controllers/EventsHubBaseController.cs",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_eventshub_api_controllers_weatherforecastcontroller_eventshub_api_controllers_weatherforecastcontroller",
-      "label": "WeatherForecastController",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "EventsHubBaseController",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.API.Controllers",
-        "scope_chain": [
-          "s35"
-        ]
-      },
-      "norm_label": "weatherforecastcontroller",
-      "source_file": "src/EventsHub.API/Controllers/WeatherForecastController.cs",
-      "source_location": "L6"
+      "norm_label": "handler",
+      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
+      "source_location": "L15"
     },
     {
       "id": "web_src_lib_types_index_d_activity",
@@ -771,12 +575,208 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Controllers",
         "scope_chain": [
-          "s231"
+          "s228"
         ]
       },
       "norm_label": "eventscontrollertests",
       "source_file": "tests/EventsHub.UnitTests/Controllers/EventsControllerTests.cs",
       "source_location": "L10"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_handler",
+      "label": "Handler",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": "handler",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_geteventlist",
+      "label": "GetEventList",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s148"
+        ]
+      },
+      "norm_label": "geteventlist",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_handler",
+      "label": "Handler",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s148"
+        ]
+      },
+      "norm_label": "handler",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
+      "source_location": "L13"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_query",
+      "label": "Query",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s148"
+        ]
+      },
+      "norm_label": "query",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_editevent",
+      "label": "EditEvent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s108"
+        ]
+      },
+      "norm_label": "editevent",
+      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
+      "source_location": "L8"
+    },
+    {
+      "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_command",
+      "label": "Command",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "IRequest",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": "command",
+      "source_file": "src/EventsHub.Application/Events/Commands/CreateEvent.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_createevent",
+      "label": "CreateEvent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "IRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": "createevent",
+      "source_file": "src/EventsHub.Application/Events/Commands/CreateEvent.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_command",
+      "label": "Command",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "IRequest",
+      "file_type": "code",
+      "metadata": {
+        "is_nested_type": true,
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s108"
+        ]
+      },
+      "norm_label": "command",
+      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
+      "source_location": "L10"
+    },
+    {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests",
+      "label": "EventToEventProfileTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": ".CreateCopiesAllEventProperties",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.UnitTests.Mapping",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": "eventtoeventprofiletests",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_eventshub_persistence_migrations_initialcreate",
+      "label": "InitialCreate",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "metadata": {
+        "is_partial": true,
+        "namespace": "EventsHub.Persistence.Migrations",
+        "scope_chain": [
+          "s296"
+        ]
+      },
+      "norm_label": "initialcreate",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
+      "source_location": "L13"
     },
     {
       "id": "src_eventshub_persistence_migrations_appdbcontextmodelsnapshot_eventshub_persistence_migrations_appdbcontextmodelsnapshot",
@@ -785,7 +785,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "AppDbContextModelSnapshot",
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "file_type": "code",
       "metadata": {
         "is_partial": true,
@@ -811,88 +811,54 @@
       "source_location": "L5"
     },
     {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_eventshub_persistence_migrations_initialcreate_buildtargetmodel",
-      "label": ".BuildTargetModel()",
+      "id": "src_eventshub_api_controllers_weatherforecastcontroller_eventshub_api_controllers_weatherforecastcontroller_get",
+      "label": ".Get()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
       "metadata": {
-        "namespace": "EventsHub.Persistence.Migrations",
+        "namespace": "EventsHub.API.Controllers",
         "scope_chain": [
-          "s296"
+          "s35"
         ],
         "unresolved_calls": [
           {
-            "callee": "HasAnnotation",
-            "receiver_type": "ModelBuilder",
+            "callee": "Range",
+            "receiver_type": "Enumerable",
             "lang": "csharp",
-            "line": "L21"
+            "line": "L16"
           },
           {
-            "callee": "Entity",
-            "receiver_type": "ModelBuilder",
+            "callee": "FromDateTime",
+            "receiver_type": "DateOnly",
             "lang": "csharp",
-            "line": "L23"
+            "line": "L18"
           }
         ]
       },
-      "norm_label": ".buildtargetmodel()",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
-      "source_location": "L18"
+      "norm_label": ".get()",
+      "source_file": "src/EventsHub.API/Controllers/WeatherForecastController.cs",
+      "source_location": "L13"
     },
     {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_eventshub_persistence_migrations_initialcreate_down",
-      "label": ".Down()",
+      "id": "src_eventshub_persistence_dbinitializer_eventshub_persistence_dbinitializer_seeddataasync",
+      "label": ".SeedDataAsync()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
       "metadata": {
-        "namespace": "EventsHub.Persistence.Migrations",
+        "namespace": "EventsHub.Persistence",
         "scope_chain": [
-          "s90"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "DropTable",
-            "receiver_type": "MigrationBuilder",
-            "lang": "csharp",
-            "line": "L38"
-          }
+          "s27"
         ]
       },
-      "norm_label": ".down()",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.cs",
-      "source_location": "L36"
-    },
-    {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_eventshub_persistence_migrations_initialcreate_up",
-      "label": ".Up()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Persistence.Migrations",
-        "scope_chain": [
-          "s90"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "CreateTable",
-            "receiver_type": "MigrationBuilder",
-            "lang": "csharp",
-            "line": "L14"
-          }
-        ]
-      },
-      "norm_label": ".up()",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.cs",
-      "source_location": "L12"
+      "norm_label": ".seeddataasync()",
+      "source_file": "src/EventsHub.Persistence/DbInitializer.cs",
+      "source_location": "L7"
     },
     {
       "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_handler_handle",
@@ -931,80 +897,6 @@
       "source_location": "L15"
     },
     {
-      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_handler_handle",
-      "label": ".Handle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s111"
-        ]
-      },
-      "norm_label": ".handle()",
-      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
-      "source_location": "L17"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_handler_handle",
-      "label": ".Handle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s73"
-        ]
-      },
-      "norm_label": ".handle()",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
-      "source_location": "L16"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_handler_handle",
-      "label": ".Handle()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s148"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "ThrowIfCancellationRequested",
-            "receiver_type": "CancellationToken",
-            "lang": "csharp",
-            "line": "L21"
-          },
-          {
-            "callee": "Delay",
-            "receiver_type": "Task",
-            "lang": "csharp",
-            "line": "L22"
-          },
-          {
-            "callee": "LogInformation",
-            "receiver_type": "ILogger",
-            "lang": "csharp",
-            "line": "L23"
-          }
-        ]
-      },
-      "norm_label": ".handle()",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
-      "source_location": "L15"
-    },
-    {
       "id": "src_eventshub_application_core_eventtoeventprofile_eventshub_application_core_eventtoeventprofile_apply",
       "label": ".Apply()",
       "_callable": true,
@@ -1015,7 +907,7 @@
       "metadata": {
         "namespace": "EventsHub.Application.Core",
         "scope_chain": [
-          "s28"
+          "s25"
         ]
       },
       "norm_label": ".apply()",
@@ -1033,112 +925,12 @@
       "metadata": {
         "namespace": "EventsHub.Application.Core",
         "scope_chain": [
-          "s28"
+          "s25"
         ]
       },
       "norm_label": ".create()",
       "source_file": "src/EventsHub.Application/Core/EventToEventProfile.cs",
       "source_location": "L7"
-    },
-    {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_applycopiesallpropertiesintosamedestination",
-      "label": ".ApplyCopiesAllPropertiesIntoSameDestination()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.UnitTests.Mapping",
-        "scope_chain": [
-          "s110"
-        ]
-      },
-      "norm_label": ".applycopiesallpropertiesintosamedestination()",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
-      "source_location": "L22"
-    },
-    {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_assertmatches",
-      "label": ".AssertMatches()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.UnitTests.Mapping",
-        "scope_chain": [
-          "s110"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "Multiple",
-            "receiver_type": "Assert",
-            "lang": "csharp",
-            "line": "L50"
-          },
-          {
-            "callee": "That",
-            "receiver_type": "Assert",
-            "lang": "csharp",
-            "line": "L52"
-          },
-          {
-            "callee": "EqualTo",
-            "receiver_type": "Is",
-            "lang": "csharp",
-            "line": "L52"
-          }
-        ]
-      },
-      "norm_label": ".assertmatches()",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
-      "source_location": "L48"
-    },
-    {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_createcopiesalleventproperties",
-      "label": ".CreateCopiesAllEventProperties()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.UnitTests.Mapping",
-        "scope_chain": [
-          "s110"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "That",
-            "receiver_type": "Assert",
-            "lang": "csharp",
-            "line": "L18"
-          }
-        ]
-      },
-      "norm_label": ".createcopiesalleventproperties()",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
-      "source_location": "L10"
-    },
-    {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_makeevent",
-      "label": ".MakeEvent()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.UnitTests.Mapping",
-        "scope_chain": [
-          "s110"
-        ]
-      },
-      "norm_label": ".makeevent()",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
-      "source_location": "L34"
     },
     {
       "id": "src_eventshub_application_core_applicationmapper_eventshub_application_core_applicationmapper_ensureregistered",
@@ -1567,24 +1359,6 @@
       "source_location": "L104"
     },
     {
-      "id": "src_eventshub_persistence_dbinitializer_eventshub_persistence_dbinitializer_seeddataasync",
-      "label": ".SeedDataAsync()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 15,
-      "community_name": ".HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Persistence",
-        "scope_chain": [
-          "s27"
-        ]
-      },
-      "norm_label": ".seeddataasync()",
-      "source_file": "src/EventsHub.Persistence/DbInitializer.cs",
-      "source_location": "L7"
-    },
-    {
       "id": "tests_eventshub_unittests_globaltestsetup_eventshub_unittests_globaltestsetup_setup",
       "label": ".Setup()",
       "_callable": true,
@@ -1631,7 +1405,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Mapping",
         "scope_chain": [
-          "s250"
+          "s247"
         ],
         "unresolved_calls": [
           {
@@ -1669,7 +1443,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Mapping",
         "scope_chain": [
-          "s250"
+          "s247"
         ],
         "unresolved_calls": [
           {
@@ -1707,7 +1481,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Mapping",
         "scope_chain": [
-          "s250"
+          "s247"
         ]
       },
       "norm_label": ".makeevent()",
@@ -1715,36 +1489,22 @@
       "source_location": "L43"
     },
     {
-      "id": "src_eventshub_api_controllers_weatherforecastcontroller_eventshub_api_controllers_weatherforecastcontroller_get",
-      "label": ".Get()",
+      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_handler_handle",
+      "label": ".Handle()",
       "_callable": true,
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
+      "community_name": "Handler",
       "file_type": "code",
       "metadata": {
-        "namespace": "EventsHub.API.Controllers",
+        "namespace": "EventsHub.Application.Events.Commands",
         "scope_chain": [
-          "s35"
-        ],
-        "unresolved_calls": [
-          {
-            "callee": "Range",
-            "receiver_type": "Enumerable",
-            "lang": "csharp",
-            "line": "L16"
-          },
-          {
-            "callee": "FromDateTime",
-            "receiver_type": "DateOnly",
-            "lang": "csharp",
-            "line": "L18"
-          }
+          "s108"
         ]
       },
-      "norm_label": ".get()",
-      "source_file": "src/EventsHub.API/Controllers/WeatherForecastController.cs",
-      "source_location": "L13"
+      "norm_label": ".handle()",
+      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
+      "source_location": "L17"
     },
     {
       "id": "src_eventshub_api_controllers_eventscontroller_eventshub_api_controllers_eventscontroller_createeventasync",
@@ -1887,7 +1647,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Controllers",
         "scope_chain": [
-          "s231"
+          "s228"
         ],
         "unresolved_calls": [
           {
@@ -1931,7 +1691,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Controllers",
         "scope_chain": [
-          "s231"
+          "s228"
         ],
         "unresolved_calls": [
           {
@@ -1969,7 +1729,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Controllers",
         "scope_chain": [
-          "s231"
+          "s228"
         ],
         "unresolved_calls": [
           {
@@ -1995,7 +1755,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Controllers",
         "scope_chain": [
-          "s231"
+          "s228"
         ]
       },
       "norm_label": ".setup()",
@@ -2013,7 +1773,7 @@
       "metadata": {
         "namespace": "EventsHub.UnitTests.Controllers",
         "scope_chain": [
-          "s231"
+          "s228"
         ],
         "unresolved_calls": [
           {
@@ -2029,12 +1789,252 @@
       "source_location": "L33"
     },
     {
+      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_handler_handle",
+      "label": ".Handle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": ".handle()",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_handler_handle",
+      "label": ".Handle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s148"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "ThrowIfCancellationRequested",
+            "receiver_type": "CancellationToken",
+            "lang": "csharp",
+            "line": "L21"
+          },
+          {
+            "callee": "Delay",
+            "receiver_type": "Task",
+            "lang": "csharp",
+            "line": "L22"
+          },
+          {
+            "callee": "LogInformation",
+            "receiver_type": "ILogger",
+            "lang": "csharp",
+            "line": "L23"
+          }
+        ]
+      },
+      "norm_label": ".handle()",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventList.cs",
+      "source_location": "L15"
+    },
+    {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_applycopiesallpropertiesintosamedestination",
+      "label": ".ApplyCopiesAllPropertiesIntoSameDestination()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": ".CreateCopiesAllEventProperties",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.UnitTests.Mapping",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": ".applycopiesallpropertiesintosamedestination()",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
+      "source_location": "L22"
+    },
+    {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_assertmatches",
+      "label": ".AssertMatches()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": ".CreateCopiesAllEventProperties",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.UnitTests.Mapping",
+        "scope_chain": [
+          "s107"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "Multiple",
+            "receiver_type": "Assert",
+            "lang": "csharp",
+            "line": "L50"
+          },
+          {
+            "callee": "That",
+            "receiver_type": "Assert",
+            "lang": "csharp",
+            "line": "L52"
+          },
+          {
+            "callee": "EqualTo",
+            "receiver_type": "Is",
+            "lang": "csharp",
+            "line": "L52"
+          }
+        ]
+      },
+      "norm_label": ".assertmatches()",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
+      "source_location": "L48"
+    },
+    {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_createcopiesalleventproperties",
+      "label": ".CreateCopiesAllEventProperties()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": ".CreateCopiesAllEventProperties",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.UnitTests.Mapping",
+        "scope_chain": [
+          "s107"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "That",
+            "receiver_type": "Assert",
+            "lang": "csharp",
+            "line": "L18"
+          }
+        ]
+      },
+      "norm_label": ".createcopiesalleventproperties()",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
+      "source_location": "L10"
+    },
+    {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_eventshub_unittests_mapping_eventtoeventprofiletests_makeevent",
+      "label": ".MakeEvent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 57,
+      "community_name": ".CreateCopiesAllEventProperties",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.UnitTests.Mapping",
+        "scope_chain": [
+          "s107"
+        ]
+      },
+      "norm_label": ".makeevent()",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
+      "source_location": "L34"
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_eventshub_persistence_migrations_initialcreate_buildtargetmodel",
+      "label": ".BuildTargetModel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Persistence.Migrations",
+        "scope_chain": [
+          "s296"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "HasAnnotation",
+            "receiver_type": "ModelBuilder",
+            "lang": "csharp",
+            "line": "L21"
+          },
+          {
+            "callee": "Entity",
+            "receiver_type": "ModelBuilder",
+            "lang": "csharp",
+            "line": "L23"
+          }
+        ]
+      },
+      "norm_label": ".buildtargetmodel()",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
+      "source_location": "L18"
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_eventshub_persistence_migrations_initialcreate_down",
+      "label": ".Down()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Persistence.Migrations",
+        "scope_chain": [
+          "s90"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "DropTable",
+            "receiver_type": "MigrationBuilder",
+            "lang": "csharp",
+            "line": "L38"
+          }
+        ]
+      },
+      "norm_label": ".down()",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.cs",
+      "source_location": "L36"
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_eventshub_persistence_migrations_initialcreate_up",
+      "label": ".Up()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Persistence.Migrations",
+        "scope_chain": [
+          "s90"
+        ],
+        "unresolved_calls": [
+          {
+            "callee": "CreateTable",
+            "receiver_type": "MigrationBuilder",
+            "lang": "csharp",
+            "line": "L14"
+          }
+        ]
+      },
+      "norm_label": ".up()",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.cs",
+      "source_location": "L12"
+    },
+    {
       "id": "src_eventshub_persistence_migrations_appdbcontextmodelsnapshot_eventshub_persistence_migrations_appdbcontextmodelsnapshot_buildmodel",
       "label": ".BuildModel()",
       "_callable": true,
       "_origin": "ast",
       "community": 7,
-      "community_name": "AppDbContextModelSnapshot",
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "EventsHub.Persistence.Migrations",
@@ -2589,6 +2589,17 @@
       "source_location": "L30"
     },
     {
+      "id": "controllerbase",
+      "label": "ControllerBase",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "norm_label": "controllerbase",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "csharp_namespace:11600ed02711def8",
       "label": "EventsHub.API.Controllers",
       "_origin": "ast",
@@ -2621,22 +2632,6 @@
       "type": "namespace"
     },
     {
-      "id": "csharp_namespace:271cc9171cba8130",
-      "label": "EventsHub.Persistence.Migrations",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "EventsHub.Persistence.Migrations"
-      },
-      "norm_label": "eventshub.persistence.migrations",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
-      "source_location": "L11",
-      "type": "namespace"
-    },
-    {
       "id": "csharp_namespace:770852f9c826f518",
       "label": "EventsHub.Application.Events.Queries",
       "_origin": "ast",
@@ -2650,22 +2645,6 @@
       "norm_label": "eventshub.application.events.queries",
       "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
       "source_location": "L5",
-      "type": "namespace"
-    },
-    {
-      "id": "csharp_namespace:ab138b22ca6273eb",
-      "label": "EventsHub.UnitTests.Mapping",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "EventsHub.UnitTests.Mapping"
-      },
-      "norm_label": "eventshub.unittests.mapping",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/ApplicationMapperTests.cs",
-      "source_location": "L4",
       "type": "namespace"
     },
     {
@@ -2733,40 +2712,24 @@
       "type": "namespace"
     },
     {
-      "id": "csharp_namespace:f29eb5a304ceb0ae",
-      "label": "EventsHub.Application.Core",
+      "id": "ienumerable",
+      "label": "IEnumerable",
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
-      "metadata": {
-        "kind": "csharp_namespace",
-        "namespace": "EventsHub.Application.Core"
-      },
-      "norm_label": "eventshub.application.core",
-      "source_file": "src/EventsHub.Application/Core/ApplicationMapper.cs",
-      "source_location": "L3",
-      "type": "namespace"
-    },
-    {
-      "id": "migration",
-      "label": "Migration",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "migration",
+      "norm_label": "ienumerable",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "migrationbuilder",
-      "label": "MigrationBuilder",
+      "id": "imediator",
+      "label": "IMediator",
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
-      "norm_label": "migrationbuilder",
+      "norm_label": "imediator",
       "source_file": "",
       "source_location": ""
     },
@@ -2793,6 +2756,23 @@
       "source_location": "L1"
     },
     {
+      "id": "src_eventshub_api_controllers_eventshubbasecontroller_eventshub_api_controllers_eventshubbasecontroller_mediator",
+      "label": "Mediator",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.API.Controllers",
+        "scope_chain": [
+          "s51"
+        ]
+      },
+      "norm_label": "mediator",
+      "source_file": "src/EventsHub.API/Controllers/EventsHubBaseController.cs",
+      "source_location": "L12"
+    },
+    {
       "id": "src_eventshub_api_controllers_weatherforecastcontroller",
       "label": "WeatherForecastController.cs",
       "_origin": "ast",
@@ -2804,6 +2784,17 @@
       "source_location": "L1"
     },
     {
+      "id": "src_eventshub_api_controllers_weatherforecastcontroller_cs_httpget",
+      "label": "HttpGet",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "norm_label": "httpget",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "src_eventshub_api_program",
       "label": "EventsHub.API/Program.cs",
       "_origin": "ast",
@@ -2812,39 +2803,6 @@
       "file_type": "code",
       "norm_label": "eventshub.api/program.cs",
       "source_file": "src/EventsHub.API/Program.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_eventshub_application_core_applicationmapper",
-      "label": "ApplicationMapper.cs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "applicationmapper.cs",
-      "source_file": "src/EventsHub.Application/Core/ApplicationMapper.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_eventshub_application_core_applicationmappingservicecollectionextensions",
-      "label": "ApplicationMappingServiceCollectionExtensions.cs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "applicationmappingservicecollectionextensions.cs",
-      "source_file": "src/EventsHub.Application/Core/ApplicationMappingServiceCollectionExtensions.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_eventshub_application_core_eventtoeventprofile",
-      "label": "EventToEventProfile.cs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "eventtoeventprofile.cs",
-      "source_file": "src/EventsHub.Application/Core/EventToEventProfile.cs",
       "source_location": "L1"
     },
     {
@@ -2870,6 +2828,23 @@
       "source_location": "L1"
     },
     {
+      "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_command_id",
+      "label": "Id",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s48"
+        ]
+      },
+      "norm_label": "id",
+      "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
+      "source_location": "L10"
+    },
+    {
       "id": "src_eventshub_application_events_commands_editevent",
       "label": "EditEvent.cs",
       "_origin": "ast",
@@ -2892,6 +2867,23 @@
       "source_location": "L1"
     },
     {
+      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_query_id",
+      "label": "Id",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Queries",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": "id",
+      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
+      "source_location": "L11"
+    },
+    {
       "id": "src_eventshub_application_events_queries_geteventlist",
       "label": "GetEventList.cs",
       "_origin": "ast",
@@ -2903,14 +2895,14 @@
       "source_location": "L1"
     },
     {
-      "id": "src_eventshub_openapi_program",
-      "label": "EventsHub.OpenApi/Program.cs",
+      "id": "src_eventshub_domain_event",
+      "label": "Event.cs",
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
-      "norm_label": "eventshub.openapi/program.cs",
-      "source_file": "src/EventsHub.OpenApi/Program.cs",
+      "norm_label": "event.cs",
+      "source_file": "src/EventsHub.Domain/Event.cs",
       "source_location": "L1"
     },
     {
@@ -2936,70 +2928,15 @@
       "source_location": "L1"
     },
     {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate",
-      "label": "20260829022218_InitialCreate.cs",
+      "id": "src_eventshub_persistence_dbinitializer_cs_task",
+      "label": "Task",
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
-      "norm_label": "20260829022218_initialcreate.cs",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_cs_datetime",
-      "label": "DateTime",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "datetime",
+      "norm_label": "task",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer",
-      "label": "20260829022218_InitialCreate.Designer.cs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "20260829022218_initialcreate.designer.cs",
-      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_cs_datetime",
-      "label": "DateTime",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "datetime",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_cs_modelbuilder",
-      "label": "ModelBuilder",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "modelbuilder",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_persistence_migrations_appdbcontextmodelsnapshot",
-      "label": "AppDbContextModelSnapshot.cs",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "file_type": "code",
-      "norm_label": "appdbcontextmodelsnapshot.cs",
-      "source_file": "src/EventsHub.Persistence/Migrations/AppDbContextModelSnapshot.cs",
-      "source_location": "L1"
     },
     {
       "id": "tests_eventshub_unittests_controllers_eventscontrollertests",
@@ -3035,15 +2972,15 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests",
-      "label": "EventToEventProfileTests.cs",
+      "id": "weatherforecast",
+      "label": "WeatherForecast",
       "_origin": "ast",
       "community": 1,
       "community_name": "EventsHub.Persistence",
       "file_type": "code",
-      "norm_label": "eventtoeventprofiletests.cs",
-      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
-      "source_location": "L1"
+      "norm_label": "weatherforecast",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "web_package_devdependencies",
@@ -3475,28 +3412,6 @@
       "source_location": ""
     },
     {
-      "id": "ilogger",
-      "label": "ILogger",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "ilogger",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "irequest",
-      "label": "IRequest",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "irequest",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "irequesthandler",
       "label": "IRequestHandler",
       "_origin": "ast",
@@ -3504,28 +3419,6 @@
       "community_name": "AppDbContext",
       "file_type": "code",
       "norm_label": "irequesthandler",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "list",
-      "label": "List",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "list",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "query",
-      "label": "Query",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "query",
       "source_file": "",
       "source_location": ""
     },
@@ -3552,23 +3445,6 @@
       "source_location": ""
     },
     {
-      "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_command_event",
-      "label": "Event",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s73"
-        ]
-      },
-      "norm_label": "event",
-      "source_file": "src/EventsHub.Application/Events/Commands/CreateEvent.cs",
-      "source_location": "L11"
-    },
-    {
       "id": "src_eventshub_application_events_commands_deleteevent_cs_cancellationtoken",
       "label": "CancellationToken",
       "_origin": "ast",
@@ -3581,106 +3457,6 @@
     },
     {
       "id": "src_eventshub_application_events_commands_deleteevent_cs_task",
-      "label": "Task",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_application_events_commands_deleteevent_eventshub_application_events_commands_command_id",
-      "label": "Id",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s48"
-        ]
-      },
-      "norm_label": "id",
-      "source_file": "src/EventsHub.Application/Events/Commands/DeleteEvent.cs",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_eventshub_application_events_commands_editevent_cs_cancellationtoken",
-      "label": "CancellationToken",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "cancellationtoken",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_application_events_commands_editevent_cs_task",
-      "label": "Task",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_cs_cancellationtoken",
-      "label": "CancellationToken",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "cancellationtoken",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_cs_task",
-      "label": "Task",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventdetails_eventshub_application_events_queries_query_id",
-      "label": "Id",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Queries",
-        "scope_chain": [
-          "s73"
-        ]
-      },
-      "norm_label": "id",
-      "source_file": "src/EventsHub.Application/Events/Queries/GetEventDetails.cs",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventlist_cs_cancellationtoken",
-      "label": "CancellationToken",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "AppDbContext",
-      "file_type": "code",
-      "norm_label": "cancellationtoken",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_application_events_queries_geteventlist_cs_task",
       "label": "Task",
       "_origin": "ast",
       "community": 12,
@@ -3708,31 +3484,14 @@
       "source_location": "L8"
     },
     {
-      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_command_event",
-      "label": "Event",
+      "id": "src_eventshub_application_core_eventtoeventprofile",
+      "label": "EventToEventProfile.cs",
       "_origin": "ast",
       "community": 13,
       "community_name": "Event",
       "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.Application.Events.Commands",
-        "scope_chain": [
-          "s111"
-        ]
-      },
-      "norm_label": "event",
-      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
-      "source_location": "L12"
-    },
-    {
-      "id": "src_eventshub_domain_event",
-      "label": "Event.cs",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "norm_label": "event.cs",
-      "source_file": "src/EventsHub.Domain/Event.cs",
+      "norm_label": "eventtoeventprofile.cs",
+      "source_file": "src/EventsHub.Application/Core/EventToEventProfile.cs",
       "source_location": "L1"
     },
     {
@@ -3928,305 +3687,6 @@
       "source_location": ""
     },
     {
-      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_cs_test",
-      "label": "Test",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "code",
-      "norm_label": "test",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design",
-      "label": "design.md",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "design.md",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_1_one_typed_class_per_source_destination_pair",
-      "label": "1. One typed class per source/destination pair",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. one typed class per source/destination pair",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L21"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_2_discover_profiles_once_during_service_registration",
-      "label": "2. Discover profiles once during service registration",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. discover profiles once during service registration",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L27"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_3_preserve_the_tracked_destination_during_edits",
-      "label": "3. Preserve the tracked destination during edits",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. preserve the tracked destination during edits",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L33"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_4_fail_explicitly_for_invalid_configuration_or_requests",
-      "label": "4. Fail explicitly for invalid configuration or requests",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. fail explicitly for invalid configuration or requests",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_context",
-      "label": "Context",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "context",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_decisions",
-      "label": "Decisions",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "decisions",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L19"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_design",
-      "label": "Design",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "design",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_goals_non_goals",
-      "label": "Goals / Non-Goals",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "goals / non-goals",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L7"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_migration_plan",
-      "label": "Migration Plan",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "migration plan",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L50"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_risks_trade_offs",
-      "label": "Risks / Trade-offs",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "risks / trade-offs",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
-      "source_location": "L43"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal",
-      "label": "proposal.md",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "proposal.md",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_capabilities",
-      "label": "Capabilities",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "capabilities",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L15"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_impact",
-      "label": "Impact",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "impact",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L25"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_modified_capabilities",
-      "label": "Modified Capabilities",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "modified capabilities",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L21"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_new_capabilities",
-      "label": "New Capabilities",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "new capabilities",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L17"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_proposal",
-      "label": "Proposal",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "proposal",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_what_changes",
-      "label": "What Changes",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what changes",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L7"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_why",
-      "label": "Why",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "why",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_specs_application_mapping_spec",
-      "label": "spec.md",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "spec.md",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/specs/application-mapping/spec.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks",
-      "label": "tasks.md",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "tasks.md",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_1_typed_mapper_foundation",
-      "label": "1. Typed mapper foundation",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. typed mapper foundation",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_2_replace_the_current_event_mapping",
-      "label": "2. Replace the current Event mapping",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. replace the current event mapping",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
-      "source_location": "L9"
-    },
-    {
-      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_3_integration_verification",
-      "label": "3. Integration verification",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "Event",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. integration verification",
-      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
-      "source_location": "L15"
-    },
-    {
       "id": "argumentnullexception",
       "label": "ArgumentNullException",
       "_origin": "ast",
@@ -4236,6 +3696,38 @@
       "norm_label": "argumentnullexception",
       "source_file": "",
       "source_location": ""
+    },
+    {
+      "id": "csharp_namespace:ab138b22ca6273eb",
+      "label": "EventsHub.UnitTests.Mapping",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "EventsHub.UnitTests.Mapping"
+      },
+      "norm_label": "eventshub.unittests.mapping",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/ApplicationMapperTests.cs",
+      "source_location": "L4",
+      "type": "namespace"
+    },
+    {
+      "id": "csharp_namespace:f29eb5a304ceb0ae",
+      "label": "EventsHub.Application.Core",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "EventsHub.Application.Core"
+      },
+      "norm_label": "eventshub.application.core",
+      "source_file": "src/EventsHub.Application/Core/ApplicationMapper.cs",
+      "source_location": "L3",
+      "type": "namespace"
     },
     {
       "id": "guid",
@@ -4293,6 +3785,28 @@
       "source_location": ""
     },
     {
+      "id": "src_eventshub_application_core_applicationmapper",
+      "label": "ApplicationMapper.cs",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "code",
+      "norm_label": "applicationmapper.cs",
+      "source_file": "src/EventsHub.Application/Core/ApplicationMapper.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_eventshub_application_core_applicationmappingservicecollectionextensions",
+      "label": "ApplicationMappingServiceCollectionExtensions.cs",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "code",
+      "norm_label": "applicationmappingservicecollectionextensions.cs",
+      "source_file": "src/EventsHub.Application/Core/ApplicationMappingServiceCollectionExtensions.cs",
+      "source_location": "L1"
+    },
+    {
       "id": "src_eventshub_application_core_iapplicationmapper",
       "label": "IApplicationMapper.cs",
       "_origin": "ast",
@@ -4323,6 +3837,17 @@
       "file_type": "code",
       "norm_label": "mappingregistry.cs",
       "source_file": "src/EventsHub.Application/Core/MappingRegistry.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_eventshub_openapi_program",
+      "label": "EventsHub.OpenApi/Program.cs",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "code",
+      "norm_label": "eventshub.openapi/program.cs",
+      "source_file": "src/EventsHub.OpenApi/Program.cs",
       "source_location": "L1"
     },
     {
@@ -4399,6 +3924,17 @@
       "source_location": "L93"
     },
     {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests",
+      "label": "EventToEventProfileTests.cs",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "code",
+      "norm_label": "eventtoeventprofiletests.cs",
+      "source_file": "tests/EventsHub.UnitTests/Mapping/EventToEventProfileTests.cs",
+      "source_location": "L1"
+    },
+    {
       "id": "type",
       "label": "Type",
       "_origin": "ast",
@@ -4422,6 +3958,18 @@
       "source_location": "L1"
     },
     {
+      "id": "docs_guides_application_mapping_application_mapping",
+      "label": "Application mapping",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "application mapping",
+      "source_file": "docs/guides/application-mapping.md",
+      "source_location": "L1"
+    },
+    {
       "id": "onetimesetup",
       "label": "OneTimeSetUp",
       "_origin": "ast",
@@ -4440,17 +3988,6 @@
       "community_name": ".HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue",
       "file_type": "code",
       "norm_label": "onetimeteardown",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "src_eventshub_persistence_dbinitializer_cs_task",
-      "label": "Task",
-      "_origin": "ast",
-      "community": 15,
-      "community_name": ".HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue",
-      "file_type": "code",
-      "norm_label": "task",
       "source_file": "",
       "source_location": ""
     },
@@ -4971,6 +4508,42 @@
       "source_location": "L149"
     },
     {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design",
+      "label": "design.md",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "ADDED Requirements",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "design.md",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal",
+      "label": "proposal.md",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "ADDED Requirements",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "proposal.md",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_specs_application_mapping_spec",
+      "label": "spec.md",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "ADDED Requirements",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "spec.md",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/specs/application-mapping/spec.md",
+      "source_location": "L1"
+    },
+    {
       "id": "openspec_changes_replace_automapper_with_custom_mapper_specs_application_mapping_spec_added_requirements",
       "label": "ADDED Requirements",
       "_origin": "ast",
@@ -5103,76 +4676,146 @@
       "source_location": "L1"
     },
     {
-      "id": "controllerbase",
-      "label": "ControllerBase",
+      "id": "src_eventshub_application_events_commands_editevent_cs_cancellationtoken",
+      "label": "CancellationToken",
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
+      "community_name": "Handler",
       "file_type": "code",
-      "norm_label": "controllerbase",
+      "norm_label": "cancellationtoken",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "ienumerable",
-      "label": "IEnumerable",
+      "id": "src_eventshub_application_events_commands_editevent_cs_task",
+      "label": "Task",
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
+      "community_name": "Handler",
       "file_type": "code",
-      "norm_label": "ienumerable",
+      "norm_label": "task",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "imediator",
-      "label": "IMediator",
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_1_one_typed_class_per_source_destination_pair",
+      "label": "1. One typed class per source/destination pair",
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
-      "file_type": "code",
-      "norm_label": "imediator",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. one typed class per source/destination pair",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L21"
     },
     {
-      "id": "src_eventshub_api_controllers_eventshubbasecontroller_eventshub_api_controllers_eventshubbasecontroller_mediator",
-      "label": "Mediator",
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_2_discover_profiles_once_during_service_registration",
+      "label": "2. Discover profiles once during service registration",
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "EventsHub.API.Controllers",
-        "scope_chain": [
-          "s51"
-        ]
-      },
-      "norm_label": "mediator",
-      "source_file": "src/EventsHub.API/Controllers/EventsHubBaseController.cs",
-      "source_location": "L12"
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. discover profiles once during service registration",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L27"
     },
     {
-      "id": "src_eventshub_api_controllers_weatherforecastcontroller_cs_httpget",
-      "label": "HttpGet",
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_3_preserve_the_tracked_destination_during_edits",
+      "label": "3. Preserve the tracked destination during edits",
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
-      "file_type": "code",
-      "norm_label": "httpget",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. preserve the tracked destination during edits",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L33"
     },
     {
-      "id": "weatherforecast",
-      "label": "WeatherForecast",
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_4_fail_explicitly_for_invalid_configuration_or_requests",
+      "label": "4. Fail explicitly for invalid configuration or requests",
       "_origin": "ast",
       "community": 23,
-      "community_name": "EventsHubBaseController",
-      "file_type": "code",
-      "norm_label": "weatherforecast",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. fail explicitly for invalid configuration or requests",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_context",
+      "label": "Context",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "context",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_decisions",
+      "label": "Decisions",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "decisions",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L19"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_design",
+      "label": "Design",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "design",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_goals_non_goals",
+      "label": "Goals / Non-Goals",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "goals / non-goals",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_migration_plan",
+      "label": "Migration Plan",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "migration plan",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L50"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_design_risks_trade_offs",
+      "label": "Risks / Trade-offs",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "Handler",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "risks / trade-offs",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/design.md",
+      "source_location": "L43"
     },
     {
       "id": "web_tsconfig",
@@ -5842,22 +5485,403 @@
       "source_location": "L1"
     },
     {
+      "id": "ilogger",
+      "label": "ILogger",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "ilogger",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "list",
+      "label": "List",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "list",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "query",
+      "label": "Query",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "query",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventdetails_cs_cancellationtoken",
+      "label": "CancellationToken",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "cancellationtoken",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventdetails_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventlist_cs_cancellationtoken",
+      "label": "CancellationToken",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "cancellationtoken",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_application_events_queries_geteventlist_cs_task",
+      "label": "Task",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Handler",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_capabilities",
+      "label": "Capabilities",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "capabilities",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_impact",
+      "label": "Impact",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "impact",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_modified_capabilities",
+      "label": "Modified Capabilities",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "modified capabilities",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_new_capabilities",
+      "label": "New Capabilities",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "new capabilities",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_proposal",
+      "label": "Proposal",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "proposal",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_what_changes",
+      "label": "What Changes",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what changes",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L7"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_proposal_why",
+      "label": "Why",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "Proposal",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/proposal.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "irequest",
+      "label": "IRequest",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "IRequest",
+      "file_type": "code",
+      "norm_label": "irequest",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_application_events_commands_createevent_eventshub_application_events_commands_command_event",
+      "label": "Event",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "IRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s73"
+        ]
+      },
+      "norm_label": "event",
+      "source_file": "src/EventsHub.Application/Events/Commands/CreateEvent.cs",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_eventshub_application_events_commands_editevent_eventshub_application_events_commands_command_event",
+      "label": "Event",
+      "_origin": "ast",
+      "community": 56,
+      "community_name": "IRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "EventsHub.Application.Events.Commands",
+        "scope_chain": [
+          "s108"
+        ]
+      },
+      "norm_label": "event",
+      "source_file": "src/EventsHub.Application/Events/Commands/EditEvent.cs",
+      "source_location": "L12"
+    },
+    {
+      "id": "tests_eventshub_unittests_mapping_eventtoeventprofiletests_cs_test",
+      "label": "Test",
+      "_origin": "ast",
+      "community": 57,
+      "community_name": ".CreateCopiesAllEventProperties",
+      "file_type": "code",
+      "norm_label": "test",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks",
+      "label": "tasks.md",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "tasks.md",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_1_typed_mapper_foundation",
+      "label": "1. Typed mapper foundation",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. typed mapper foundation",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
+      "source_location": "L3"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_2_replace_the_current_event_mapping",
+      "label": "2. Replace the current Event mapping",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. replace the current event mapping",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_3_integration_verification",
+      "label": "3. Integration verification",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. integration verification",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "openspec_changes_replace_automapper_with_custom_mapper_tasks_tasks",
+      "label": "Tasks",
+      "_origin": "ast",
+      "community": 58,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tasks",
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "csharp_namespace:271cc9171cba8130",
+      "label": "EventsHub.Persistence.Migrations",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "metadata": {
+        "kind": "csharp_namespace",
+        "namespace": "EventsHub.Persistence.Migrations"
+      },
+      "norm_label": "eventshub.persistence.migrations",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
+      "source_location": "L11",
+      "type": "namespace"
+    },
+    {
+      "id": "migration",
+      "label": "Migration",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "migration",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "migrationbuilder",
+      "label": "MigrationBuilder",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "migrationbuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "modelsnapshot",
       "label": "ModelSnapshot",
       "_origin": "ast",
       "community": 7,
-      "community_name": "AppDbContextModelSnapshot",
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "file_type": "code",
       "norm_label": "modelsnapshot",
       "source_file": "",
       "source_location": ""
     },
     {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate",
+      "label": "20260829022218_InitialCreate.cs",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "20260829022218_initialcreate.cs",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer",
+      "label": "20260829022218_InitialCreate.Designer.cs",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "20260829022218_initialcreate.designer.cs",
+      "source_file": "src/EventsHub.Persistence/Migrations/20260829022218_InitialCreate.Designer.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_cs_datetime",
+      "label": "DateTime",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "datetime",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_20260829022218_initialcreate_designer_cs_modelbuilder",
+      "label": "ModelBuilder",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "modelbuilder",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_eventshub_persistence_migrations_appdbcontextmodelsnapshot",
+      "label": "AppDbContextModelSnapshot.cs",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "file_type": "code",
+      "norm_label": "appdbcontextmodelsnapshot.cs",
+      "source_file": "src/EventsHub.Persistence/Migrations/AppDbContextModelSnapshot.cs",
+      "source_location": "L1"
+    },
+    {
       "id": "src_eventshub_persistence_migrations_appdbcontextmodelsnapshot_cs_datetime",
       "label": "DateTime",
       "_origin": "ast",
       "community": 7,
-      "community_name": "AppDbContextModelSnapshot",
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "file_type": "code",
       "norm_label": "datetime",
       "source_file": "",
@@ -5868,7 +5892,7 @@
       "label": "ModelBuilder",
       "_origin": "ast",
       "community": 7,
-      "community_name": "AppDbContextModelSnapshot",
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "file_type": "code",
       "norm_label": "modelbuilder",
       "source_file": "",
@@ -8534,6 +8558,18 @@
       "type": "external"
     },
     {
+      "id": "microsoft_aspnetcore_http",
+      "label": "microsoft_aspnetcore_http",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "microsoft_aspnetcore_http",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "microsoft_aspnetcore_mvc",
       "label": "microsoft_aspnetcore_mvc",
       "_origin": "semantic",
@@ -8542,6 +8578,18 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "microsoft_aspnetcore_mvc",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "microsoft_data_sqlite",
+      "label": "microsoft_data_sqlite",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "EventsHub.Persistence",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "microsoft_data_sqlite",
       "source_file": "",
       "type": "external"
     },
@@ -8558,42 +8606,6 @@
       "type": "external"
     },
     {
-      "id": "microsoft_entityframeworkcore_infrastructure",
-      "label": "microsoft_entityframeworkcore_infrastructure",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "microsoft_entityframeworkcore_infrastructure",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "microsoft_entityframeworkcore_migrations",
-      "label": "microsoft_entityframeworkcore_migrations",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "microsoft_entityframeworkcore_migrations",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "microsoft_entityframeworkcore_storage_valueconversion",
-      "label": "microsoft_entityframeworkcore_storage_valueconversion",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "microsoft_entityframeworkcore_storage_valueconversion",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "microsoft_extensions_logging",
       "label": "microsoft_extensions_logging",
       "_origin": "semantic",
@@ -8602,30 +8614,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "microsoft_extensions_logging",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "newtonsoft_json_serialization",
-      "label": "newtonsoft_json_serialization",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "newtonsoft_json_serialization",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "system",
-      "label": "system",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "system",
       "source_file": "",
       "type": "external"
     },
@@ -8654,18 +8642,6 @@
       "type": "external"
     },
     {
-      "id": "system_reflection",
-      "label": "system_reflection",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "system_reflection",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "system_threading_tasks",
       "label": "system_threading_tasks",
       "_origin": "semantic",
@@ -8674,6 +8650,42 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "system_threading_tasks",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "microsoft_extensions_dependencyinjection",
+      "label": "microsoft_extensions_dependencyinjection",
+      "_origin": "semantic",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "microsoft_extensions_dependencyinjection",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "newtonsoft_json_serialization",
+      "label": "newtonsoft_json_serialization",
+      "_origin": "semantic",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "newtonsoft_json_serialization",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "system_reflection",
+      "label": "system_reflection",
+      "_origin": "semantic",
+      "community": 14,
+      "community_name": "IApplicationMapper",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "system_reflection",
       "source_file": "",
       "type": "external"
     },
@@ -8702,35 +8714,50 @@
       "type": "external"
     },
     {
-      "id": "microsoft_aspnetcore_http",
-      "label": "microsoft_aspnetcore_http",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
+      "id": "microsoft_entityframeworkcore_infrastructure",
+      "label": "microsoft_entityframeworkcore_infrastructure",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "external": true,
       "file_type": "concept",
-      "norm_label": "microsoft_aspnetcore_http",
+      "norm_label": "microsoft_entityframeworkcore_infrastructure",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "microsoft_data_sqlite",
-      "label": "microsoft_data_sqlite",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
+      "id": "microsoft_entityframeworkcore_migrations",
+      "label": "microsoft_entityframeworkcore_migrations",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "external": true,
       "file_type": "concept",
-      "norm_label": "microsoft_data_sqlite",
+      "norm_label": "microsoft_entityframeworkcore_migrations",
       "source_file": "",
       "type": "external"
     },
     {
-      "id": "microsoft_extensions_dependencyinjection",
-      "label": "microsoft_extensions_dependencyinjection",
-      "community": 1,
-      "community_name": "EventsHub.Persistence",
+      "id": "microsoft_entityframeworkcore_storage_valueconversion",
+      "label": "microsoft_entityframeworkcore_storage_valueconversion",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
       "external": true,
       "file_type": "concept",
-      "norm_label": "microsoft_extensions_dependencyinjection",
+      "norm_label": "microsoft_entityframeworkcore_storage_valueconversion",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "system",
+      "label": "system",
+      "_origin": "semantic",
+      "community": 7,
+      "community_name": "20260829022218_InitialCreate.Designer.cs",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "system",
       "source_file": "",
       "type": "external"
     }
@@ -13566,6 +13593,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_guides_application_mapping",
+      "target": "docs_guides_application_mapping_application_mapping",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/guides/application-mapping.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "eventshub",
       "target": "src_eventshub_api_eventshub_api",
       "relation": "contains",
@@ -13935,6 +13973,17 @@
     },
     {
       "source": "openspec_changes_replace_automapper_with_custom_mapper_tasks",
+      "target": "openspec_changes_replace_automapper_with_custom_mapper_tasks_tasks",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "openspec/changes/replace-automapper-with-custom-mapper/tasks.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "openspec_changes_replace_automapper_with_custom_mapper_tasks_tasks",
       "target": "openspec_changes_replace_automapper_with_custom_mapper_tasks_3_integration_verification",
       "relation": "contains",
       "_origin": "ast",
@@ -13945,7 +13994,7 @@
       "weight": 1.0
     },
     {
-      "source": "openspec_changes_replace_automapper_with_custom_mapper_tasks",
+      "source": "openspec_changes_replace_automapper_with_custom_mapper_tasks_tasks",
       "target": "openspec_changes_replace_automapper_with_custom_mapper_tasks_1_typed_mapper_foundation",
       "relation": "contains",
       "_origin": "ast",
@@ -13956,7 +14005,7 @@
       "weight": 1.0
     },
     {
-      "source": "openspec_changes_replace_automapper_with_custom_mapper_tasks",
+      "source": "openspec_changes_replace_automapper_with_custom_mapper_tasks_tasks",
       "target": "openspec_changes_replace_automapper_with_custom_mapper_tasks_2_replace_the_current_event_mapping",
       "relation": "contains",
       "_origin": "ast",
@@ -16649,7 +16698,7 @@
       "weight": 1.0
     },
     {
-      "source": "docs_guides_application_mapping",
+      "source": "docs_guides_application_mapping_application_mapping",
       "target": "src_eventshub_application_core_applicationmappingservicecollectionextensions_eventshub_application_core_applicationmappingservicecollectionextensions_addapplicationmapper",
       "relation": "references",
       "_origin": "ast",
@@ -16673,7 +16722,7 @@
       "weight": 1.0
     },
     {
-      "source": "docs_guides_application_mapping",
+      "source": "docs_guides_application_mapping_application_mapping",
       "target": "tests_eventshub_unittests_mapping_applicationmappertests_eventshub_unittests_mapping_applicationmappertests_discoversadditionalassemblywithoutchangingmapper",
       "relation": "references",
       "_origin": "ast",
@@ -16913,7 +16962,7 @@
       "weight": 1.0
     },
     {
-      "source": "docs_guides_application_mapping",
+      "source": "docs_guides_application_mapping_application_mapping",
       "target": "src_eventshub_application_core_iapplicationmapper_eventshub_application_core_iapplicationmapper",
       "relation": "references",
       "_origin": "ast",
@@ -16949,7 +16998,7 @@
       "weight": 1.0
     },
     {
-      "source": "docs_guides_application_mapping",
+      "source": "docs_guides_application_mapping_application_mapping",
       "target": "tests_eventshub_unittests_mapping_applicationmappertests_eventshub_unittests_mapping_sampleprofile",
       "relation": "references",
       "_origin": "ast",

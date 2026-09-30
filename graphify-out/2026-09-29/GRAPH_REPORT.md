@@ -1,12 +1,12 @@
 # Graph Report - EventsHub  (2026-09-29)
 
 ## Corpus Check
-- 82 files · ~60,855 words
+- 82 files · ~60,854 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 11 file(s) not represented in the graph (top: (none) 8, .css 2, .nswag 1)
 
 ## Summary
-- 607 nodes · 793 edges · 54 communities (31 shown, 23 thin omitted)
+- 609 nodes · 795 edges · 59 communities (35 shown, 24 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.92)
 - Token cost: 0 input · 0 output
 
@@ -23,7 +23,7 @@
 - EventsHub.UnitTests.csproj
 - .GetEventsAsync
 - baseUri = https://localhost:5001/api/v1
-- AppDbContextModelSnapshot
+- 20260829022218_InitialCreate.Designer.cs
 - compilerOptions
 - Command
 - devDependencies
@@ -39,7 +39,7 @@
 - Git branch
 - openspec-explore/SKILL.md
 - ADDED Requirements
-- EventsHubBaseController
+- Handler
 - Domain event
 - EventsHub.Domain layer
 - Layered platform illustration
@@ -65,6 +65,11 @@
 - AppDbContext
 - automapper
 - system_runtime_compilerservices
+- Handler
+- Proposal
+- IRequest
+- .CreateCopiesAllEventProperties
+- Tasks
 
 ## God Nodes (most connected - your core abstractions)
 1. `Event` - 44 edges
@@ -81,14 +86,14 @@
 ## Surprising Connections (you probably didn't know these)
 - `1. Typed mapper foundation` --references--> `IApplicationMapper`  [INFERRED]
   openspec/changes/replace-automapper-with-custom-mapper/tasks.md → src/EventsHub.Application/Core/IApplicationMapper.cs
-- `Scenario: Event edit updates a tracked entity` --references--> `Event`  [INFERRED]
-  openspec/changes/replace-automapper-with-custom-mapper/specs/application-mapping/spec.md → src/EventsHub.Domain/Event.cs
-- `1. One typed class per source/destination pair` --references--> `IApplicationMapper`  [INFERRED]
-  openspec/changes/replace-automapper-with-custom-mapper/design.md → src/EventsHub.Application/Core/IApplicationMapper.cs
-- `Context` --references--> `Handler`  [INFERRED]
-  openspec/changes/replace-automapper-with-custom-mapper/design.md → src/EventsHub.Application/Events/Commands/EditEvent.cs
 - `2. Discover profiles once during service registration` --references--> `Event`  [INFERRED]
   openspec/changes/replace-automapper-with-custom-mapper/design.md → src/EventsHub.Domain/Event.cs
+- `Why` --references--> `Event`  [INFERRED]
+  openspec/changes/replace-automapper-with-custom-mapper/proposal.md → src/EventsHub.Domain/Event.cs
+- `Scenario: Event edit updates a tracked entity` --references--> `Event`  [INFERRED]
+  openspec/changes/replace-automapper-with-custom-mapper/specs/application-mapping/spec.md → src/EventsHub.Domain/Event.cs
+- `1. One typed class per source/destination pair` --references--> `EventToEventProfile`  [INFERRED]
+  openspec/changes/replace-automapper-with-custom-mapper/design.md → src/EventsHub.Application/Core/EventToEventProfile.cs
 
 ## Import Cycles
 - None detected.
@@ -98,15 +103,15 @@
 - **Graphify extraction pipeline** — _agents_skills_graphify_skill_structural_extraction, _agents_skills_graphify_skill_semantic_extraction, _agents_skills_graphify_skill_graph_merge, _agents_skills_graphify_skill_community_detection [EXTRACTED 1.00]
 - **SVG icon sprite** — web_public_icons_bluesky_icon, web_public_icons_discord_icon, web_public_icons_documentation_icon, web_public_icons_github_icon, web_public_icons_social_icon, web_public_icons_x_icon [EXTRACTED 1.00]
 
-## Communities (54 total, 23 thin omitted)
+## Communities (59 total, 24 thin omitted)
 
 ### Community 0 - "package.json"
 Cohesion: 0.05
 Nodes (45): axios, @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks (+37 more)
 
 ### Community 1 - "EventsHub.Persistence"
-Cohesion: 0.07
-Nodes (32): EventsHub.API.Controllers, EventsHub.Domain, EventsHub.Persistence.Migrations, EventsHub.Application.Events.Queries, EventsHub.UnitTests.Mapping, EventsHub.Application.Events.Commands, EventsHub.UnitTests, EventsHub.Persistence (+24 more)
+Cohesion: 0.06
+Nodes (32): ControllerBase, EventsHub.API.Controllers, EventsHub.Domain, EventsHub.Application.Events.Queries, EventsHub.Application.Events.Commands, EventsHub.UnitTests, EventsHub.Persistence, EventsHub.UnitTests.Controllers (+24 more)
 
 ### Community 2 - "Graphify"
 Cohesion: 0.06
@@ -128,9 +133,9 @@ Nodes (18): ActionResult, Exception, Handler, HttpDelete, HttpPost, HttpPut, IRe
 Cohesion: 0.10
 Nodes (25): baseUri = https://localhost:5001/api/v1, 404 Not Found: The event was not found, POST /events/, Events - Create - 200, 404 Not Found: The event was not found, DELETE /events/:eventId, Events - Delete - 200, 404 Not Found: The event was not found (+17 more)
 
-### Community 7 - "AppDbContextModelSnapshot"
-Cohesion: 0.40
-Nodes (4): ModelSnapshot, DateTime, ModelBuilder, AppDbContextModelSnapshot
+### Community 7 - "20260829022218_InitialCreate.Designer.cs"
+Cohesion: 0.12
+Nodes (15): EventsHub.Persistence.Migrations, microsoft_entityframeworkcore_infrastructure, microsoft_entityframeworkcore_migrations, microsoft_entityframeworkcore_storage_valueconversion, Migration, MigrationBuilder, ModelSnapshot, DateTime (+7 more)
 
 ### Community 8 - "compilerOptions"
 Cohesion: 0.10
@@ -149,20 +154,20 @@ Cohesion: 0.12
 Nodes (16): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection, noEmit, noFallthroughCasesInSwitch (+8 more)
 
 ### Community 12 - "AppDbContext"
-Cohesion: 0.07
-Nodes (36): Command, DbContext, DbContextOptions, DbSet, ILogger, IRequest, IRequestHandler, List (+28 more)
+Cohesion: 0.17
+Nodes (13): Command, DbContext, DbContextOptions, DbSet, IRequestHandler, CancellationToken, Task, Handler (+5 more)
 
 ### Community 13 - "Event"
-Cohesion: 0.06
-Nodes (40): 1. One typed class per source/destination pair, 2. Discover profiles once during service registration, 3. Preserve the tracked destination during edits, 4. Fail explicitly for invalid configuration or requests, Context, Decisions, Design, Goals / Non-Goals (+32 more)
+Cohesion: 0.14
+Nodes (14): EventToEventProfile, DateTime, Event, Category, City, Date, Description, Id (+6 more)
 
 ### Community 14 - "IApplicationMapper"
-Cohesion: 0.09
-Nodes (20): ArgumentNullException, Guid, HashSet, InvalidOperationException, IServiceCollection, IServiceProvider, ApplicationMapper, ApplicationMappingServiceCollectionExtensions (+12 more)
+Cohesion: 0.07
+Nodes (26): ArgumentNullException, EventsHub.UnitTests.Mapping, EventsHub.Application.Core, Application mapping, Guid, HashSet, InvalidOperationException, IServiceCollection (+18 more)
 
 ### Community 15 - ".HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue"
-Cohesion: 0.15
-Nodes (10): OneTimeSetUp, OneTimeTearDown, Task, DbInitializer, Task, GlobalTestSetup, AppDbContext, Task (+2 more)
+Cohesion: 0.19
+Nodes (8): OneTimeSetUp, OneTimeTearDown, Task, GlobalTestSetup, AppDbContext, Task, Test, EditEventMappingTests
 
 ### Community 16 - "https"
 Cohesion: 0.20
@@ -189,12 +194,12 @@ Cohesion: 0.17
 Nodes (11): Check for context, Ending Discovery, Guardrails, Handling Different Entry Points, OpenSpec Awareness, Planning a Change, The Stance, What You Don't Have To Do (+3 more)
 
 ### Community 22 - "ADDED Requirements"
-Cohesion: 0.18
+Cohesion: 0.14
 Nodes (11): ADDED Requirements, Purpose, Requirement: Existing destination instances remain in place, Requirement: Typed profiles define mappings explicitly, Requirement: Unsupported or ambiguous mappings fail clearly, Scenario: Event edit updates a tracked entity, Scenario: Future type pair is added, Scenario: Mapping pair is missing (+3 more)
 
-### Community 23 - "EventsHubBaseController"
-Cohesion: 0.22
-Nodes (8): ControllerBase, IEnumerable, IMediator, EventsHubBaseController, Mediator, HttpGet, WeatherForecastController, WeatherForecast
+### Community 23 - "Handler"
+Cohesion: 0.19
+Nodes (13): 1. One typed class per source/destination pair, 2. Discover profiles once during service registration, 3. Preserve the tracked destination during edits, 4. Fail explicitly for invalid configuration or requests, Context, Decisions, Design, Goals / Non-Goals (+5 more)
 
 ### Community 24 - "Domain event"
 Cohesion: 0.40
@@ -224,23 +229,39 @@ Nodes (8): Arrange Act Assert, CI and CD testing, Code coverage, Flaky tests, So
 Cohesion: 0.33
 Nodes (6): AppDbContext, Clean Architecture implementation gap, Controller-to-EF Core access, Event entity, EventsController, SQLite eventshub.db
 
+### Community 54 - "Handler"
+Cohesion: 0.21
+Nodes (11): ILogger, List, Query, CancellationToken, Task, Handler, CancellationToken, Task (+3 more)
+
+### Community 55 - "Proposal"
+Cohesion: 0.25
+Nodes (8): Capabilities, Impact, Modified Capabilities, New Capabilities, Proposal, What Changes, Why, EditEvent
+
+### Community 56 - "IRequest"
+Cohesion: 0.33
+Nodes (6): IRequest, Command, Event, CreateEvent, Command, Event
+
+### Community 58 - "Tasks"
+Cohesion: 0.40
+Nodes (4): 1. Typed mapper foundation, 2. Replace the current Event mapping, 3. Integration verification, Tasks
+
 ## Knowledge Gaps
 - **248 isolated node(s):** `Mediator`, `net10.0`, `Microsoft.AspNetCore.OpenApi (10.0.11)`, `Microsoft.EntityFrameworkCore.Design (10.0.11)`, `Microsoft.NET.Sdk.Web` (+243 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 321 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 323 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Event` connect `Event` to `AppDbContext`, `.GetEventsAsync`, `ADDED Requirements`, `.HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
-- **Why does `AppDbContext` connect `AppDbContext` to `EventsHub.Persistence`, `Event`, `.HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue`?**
+- **Why does `Event` connect `Event` to `EventsHub.Persistence`, `.GetEventsAsync`, `AppDbContext`, `.HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue`, `Handler`, `ADDED Requirements`, `Proposal`, `IRequest`, `Handler`, `Tasks`, `.CreateCopiesAllEventProperties`?**
+  _High betweenness centrality (0.082) - this node is a cross-community bridge._
+- **Why does `AppDbContext` connect `AppDbContext` to `EventsHub.Persistence`, `Event`, `.HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue`, `Handler`, `Handler`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
-- **Why does `IApplicationMapper` connect `IApplicationMapper` to `Event`, `.HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue`?**
-  _High betweenness centrality (0.029) - this node is a cross-community bridge._
+- **Why does `IApplicationMapper` connect `IApplicationMapper` to `.CreateCopiesAllEventProperties`, `Tasks`, `.HandlerUpdatesTrackedEntityAndPersistsEveryMappedValue`, `Handler`?**
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Are the 10 inferred relationships involving `Event` (e.g. with `1. One typed class per source/destination pair` and `2. Discover profiles once during service registration`) actually correct?**
   _`Event` has 10 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 3 inferred relationships involving `IApplicationMapper` (e.g. with `application-mapping.md` and `1. One typed class per source/destination pair`) actually correct?**
+- **Are the 3 inferred relationships involving `IApplicationMapper` (e.g. with `Application mapping` and `1. One typed class per source/destination pair`) actually correct?**
   _`IApplicationMapper` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Mediator`, `net10.0`, `Microsoft.AspNetCore.OpenApi (10.0.11)` to the rest of the system?**
   _248 weakly-connected nodes found - possible documentation gaps or missing edges._

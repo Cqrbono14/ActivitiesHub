@@ -209,12 +209,6 @@
     "ast_hash": "62784e7f997037a71956b6c89911f27d",
     "semantic_hash": "62784e7f997037a71956b6c89911f27d"
   },
-  "web/src/App.tsx": {
-    "mtime": 1789047360.3816555,
-    "seen": 1790742717.9189556,
-    "ast_hash": "e48cd20507640c5fb3a99eab7695a0fc",
-    "semantic_hash": "e48cd20507640c5fb3a99eab7695a0fc"
-  },
   "web/src/lib/types/index.d.ts": {
     "mtime": 1788960568.4840243,
     "seen": 1790742717.9189565,
@@ -222,10 +216,10 @@
     "semantic_hash": "6468720e4aa579e5348e3b1fee9b1f00"
   },
   "web/src/main.tsx": {
-    "mtime": 1788961446.4517674,
-    "seen": 1790742717.9189575,
-    "ast_hash": "253dfae080a3cf052a2cd4edbafd042a",
-    "semantic_hash": "253dfae080a3cf052a2cd4edbafd042a"
+    "mtime": 1790869079.9282887,
+    "seen": 1790870925.1990716,
+    "ast_hash": "4adac16d5fbb75b69855e612b3cd5fb9",
+    "semantic_hash": ""
   },
   "web/tsconfig.app.json": {
     "mtime": 1788794933.6854544,
@@ -443,36 +437,6 @@
     "ast_hash": "3a3dbdf60a83cd4d62bc05b018d28b5c",
     "semantic_hash": "3a3dbdf60a83cd4d62bc05b018d28b5c"
   },
-  "web/public/favicon.svg": {
-    "mtime": 1788794933.672809,
-    "seen": 1790742717.9189987,
-    "ast_hash": "7e840862161341271697daa99a40d76b",
-    "semantic_hash": "7e840862161341271697daa99a40d76b"
-  },
-  "web/public/icons.svg": {
-    "mtime": 1788794933.6748946,
-    "seen": 1790742717.919,
-    "ast_hash": "21c7473c592c67dc87223d49892c8f0a",
-    "semantic_hash": "21c7473c592c67dc87223d49892c8f0a"
-  },
-  "web/src/assets/hero.png": {
-    "mtime": 1788794933.6807625,
-    "seen": 1790742717.9190009,
-    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
-    "semantic_hash": "aead493361b27e7510691c5d7072dfc1"
-  },
-  "web/src/assets/react.svg": {
-    "mtime": 1788794933.6807625,
-    "seen": 1790742717.9190016,
-    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
-    "semantic_hash": "f0402b67b6ce880f65666bb49e841696"
-  },
-  "web/src/assets/vite.svg": {
-    "mtime": 1788794933.6828828,
-    "seen": 1790742717.9190025,
-    "ast_hash": "6d5180a782d64c8cf51ba01c2a2184d8",
-    "semantic_hash": "6d5180a782d64c8cf51ba01c2a2184d8"
-  },
   "src/EventsHub.Application/Core/ApplicationMapper.cs": {
     "mtime": 1790744472.6434858,
     "seen": 1790744931.9613276,
@@ -609,6 +573,90 @@
     "mtime": 1790745336.3921218,
     "seen": 1790745538.970196,
     "ast_hash": "4b6277443bf5a3568c7360328363f36d",
+    "semantic_hash": ""
+  },
+  "web/src/app/layout/App.tsx": {
+    "mtime": 1792385189.3950644,
+    "seen": 1792385769.1199803,
+    "ast_hash": "243259c4a65d7a2d7873f2cecc9cacfe",
+    "semantic_hash": ""
+  },
+  "web/src/app/layout/NavBar.tsx": {
+    "mtime": 1791811135.5455706,
+    "seen": 1791812740.441086,
+    "ast_hash": "1b6e847da092d61018a807fde8440f56",
+    "semantic_hash": ""
+  },
+  "web/src/features/activities/dashboard/ActivityCard.tsx": {
+    "mtime": 1792385711.2047558,
+    "seen": 1792385769.1199853,
+    "ast_hash": "606a5e8006013debc615bf2bbbd5f291",
+    "semantic_hash": ""
+  },
+  "web/src/features/activities/dashboard/ActivityDashboard.tsx": {
+    "mtime": 1792385286.3787966,
+    "seen": 1792385769.1199872,
+    "ast_hash": "92a76acf646577a13d56a107f5c07c21",
+    "semantic_hash": ""
+  },
+  "web/src/features/activities/dashboard/ActivityList.tsx": {
+    "mtime": 1792385366.5221405,
+    "seen": 1792385769.1199884,
+    "ast_hash": "e401a50ff3f77c984ecf4af65b1d9a23",
+    "semantic_hash": ""
+  },
+  "web/src/features/activities/details/ActivityDetail.tsx": {
+    "mtime": 1791811666.0527365,
+    "seen": 1791812740.441095,
+    "ast_hash": "2ee1d4acb55e1c0b92ea01cafb39b7d0",
+    "semantic_hash": ""
+  },
+  "web/public/images/categoryImages/culture.jpg": {
+    "mtime": 1791379720.4538276,
+    "seen": 1791382513.9488978,
+    "ast_hash": "b8713112f32952ed1961a9f560d78229",
+    "semantic_hash": ""
+  },
+  "web/public/images/categoryImages/drinks.jpg": {
+    "mtime": 1791379903.6206796,
+    "seen": 1791382513.9489038,
+    "ast_hash": "1262016c5e86cb4bbeb520235052fe8c",
+    "semantic_hash": ""
+  },
+  "web/public/images/categoryImages/film.jpg": {
+    "mtime": 1791381516.1829894,
+    "seen": 1791382513.9489062,
+    "ast_hash": "cb0a450b933c61463303c37b155ac5c0",
+    "semantic_hash": ""
+  },
+  "web/public/images/categoryImages/food.jpg": {
+    "mtime": 1791381477.5389779,
+    "seen": 1791382513.9489102,
+    "ast_hash": "4bb58bab50f1eb5acc0c136f00f5b144",
+    "semantic_hash": ""
+  },
+  "web/public/images/categoryImages/music.jpg": {
+    "mtime": 1791379953.1412237,
+    "seen": 1791382513.9489124,
+    "ast_hash": "6a6b9d7363e7a223b5c03e4b63b038f1",
+    "semantic_hash": ""
+  },
+  "web/public/images/categoryImages/travel.jpg": {
+    "mtime": 1791381564.1233976,
+    "seen": 1791382513.9489145,
+    "ast_hash": "b8fe01359fa793625ebfb431774b7dec",
+    "semantic_hash": ""
+  },
+  "web/src/features/form/ActivityForm.tsx": {
+    "mtime": 1791985976.7853844,
+    "seen": 1791986104.1701105,
+    "ast_hash": "300aa15fb2d91e41df08d7ceecea4c57",
+    "semantic_hash": ""
+  },
+  "docs/guides/husky-setup.md": {
+    "mtime": 1792415755.1020827,
+    "seen": 1792415819.7711759,
+    "ast_hash": "30c60b84607b6569bf5a397c8acb281f",
     "semantic_hash": ""
   }
 }

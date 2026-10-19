@@ -65,12 +65,17 @@ $(cat graphify-out/.graphify_python) -m graphify.serve graphify-out/graph.json
 This starts a stdio MCP server that exposes tools: `query_graph`, `get_node`, `get_neighbors`, `get_community`, `god_nodes`, `graph_stats`, `shortest_path`. Add to an MCP-compatible agent orchestrator so other agents can query the graph live.
 
 For an MCP client that uses a JSON server configuration, set `command` to the **absolute interpreter path** saved in `graphify-out/.graphify_python`. A configuration file cannot evaluate shell substitution, and under `uv tool install` the system `python3` may not import graphify:
+
 ```json
 {
   "mcpServers": {
     "graphify": {
       "command": "<absolute path from: cat graphify-out/.graphify_python>",
-      "args": ["-m", "graphify.serve", "/absolute/path/to/graphify-out/graph.json"]
+      "args": [
+        "-m",
+        "graphify.serve",
+        "/absolute/path/to/graphify-out/graph.json"
+      ]
     }
   }
 }
@@ -85,4 +90,3 @@ graphify benchmark
 ```
 
 Print the output directly in chat. If `total_words <= 5000`, skip silently - the graph value is structural clarity, not token compression, for small corpora.
-

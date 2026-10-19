@@ -7,11 +7,13 @@ See [proposal.md](proposal.md) for the motivation and [application-mapping spec]
 ## Goals / Non-Goals
 
 **Goals:**
+
 - Keep mapping rules explicit and strongly typed while preserving in-place updates of tracked entities.
 - Let a developer add a mapping pair in a supplied assembly without editing the dispatcher.
 - Detect duplicate pair registrations at startup and report unsupported pairs clearly at use time.
 
 **Non-Goals:**
+
 - Reproduce AutoMapper's `Profile`, `CreateMap`, conventions, projections, nested object graphs, or expression translation.
 - Change event endpoints, database schema, or introduce DTOs in this change.
 - Support in-place updates of immutable destination types; a future immutable mapping needs a separately designed contract.

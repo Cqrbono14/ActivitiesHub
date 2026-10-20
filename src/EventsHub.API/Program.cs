@@ -1,5 +1,7 @@
+using EventsHub.Application.Events.Queries;
 using Microsoft.EntityFrameworkCore;
 using EventsHub.Persistence;
+using EventsHub.Application.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +11,20 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection"));
 });
+builder.Services.AddCors();
+builder.Services.AddMediatR(opt => 
+    opt.RegisterServicesFromAssemblyContaining<GetEventList.Handler>()
+);
+builder.Services.AddApplicationMapper();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseCors(opt => opt
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .WithOrigins("http://localhost:3000", "https://localhost:3000"));
+
 if (app.Environment.IsDevelopment()) { }
 
 using var scope = app.Services.CreateScope();

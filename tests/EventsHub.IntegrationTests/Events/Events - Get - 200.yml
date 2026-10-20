@@ -8,7 +8,7 @@ http:
   url: "{{baseUri}}/events/:eventId"
   params:
     - name: eventId
-      value: 13cd1f6f-e60f-408f-8b58-5732da6e88be
+      value: 11e61225-6e47-4401-aa78-57d6b04be0cf
       type: path
   auth: inherit
 
@@ -25,3 +25,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

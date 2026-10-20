@@ -431,3 +431,15 @@ FodyWeavers.xsd
 *.db
 *.db-shm
 *.db-wal
+# Graphify machine-local state
+graphify-out/cache/
+graphify-out/cost.json
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+
+# graphify: keep only graph.json, GRAPH_REPORT.md and the curated labels
+graphify-out/*
+!graphify-out/graph.json
+!graphify-out/GRAPH_REPORT.md
+!graphify-out/.graphify_labels.json
+!graphify-out/.graphify_labels.json.sig

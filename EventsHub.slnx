@@ -7,6 +7,6 @@
     <Project Path="src/EventsHub.Persistence/EventsHub.Persistence.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/EventsHub.UnitTests/EventsHub.UnitTests.csproj" />
+    <Project Path="tests/EventsHub.Api.UnitTests/EventsHub.UnitTests.csproj" />
   </Folder>
 </Solution>

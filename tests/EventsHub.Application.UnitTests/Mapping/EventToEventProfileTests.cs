@@ -2,7 +2,7 @@ using EventsHub.Application.Core;
 using EventsHub.Domain;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EventsHub.UnitTests.Mapping;
+namespace EventsHub.Application.UnitTests.Mapping;
 
 [TestFixture]
 public class EventToEventProfileTests

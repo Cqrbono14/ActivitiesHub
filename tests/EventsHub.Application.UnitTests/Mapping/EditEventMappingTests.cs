@@ -6,7 +6,7 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace EventsHub.UnitTests.Mapping;
+namespace EventsHub.Application.UnitTests.Mapping;
 
 [TestFixture]
 public class EditEventMappingTests

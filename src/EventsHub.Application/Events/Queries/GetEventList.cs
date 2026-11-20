@@ -23,7 +23,7 @@ public class GetEventList
                     logger.LogInformation($"Task {i} has been completed!");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 logger.LogInformation($"Task has been CANCELLED!");
             }

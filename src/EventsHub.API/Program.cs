@@ -1,7 +1,7 @@
-using EventsHub.Application.Events.Queries;
-using Microsoft.EntityFrameworkCore;
-using EventsHub.Persistence;
 using EventsHub.Application.Core;
+using EventsHub.Application.Events.Queries;
+using EventsHub.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,10 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDbContext>(opt =>
 {
-    opt.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection"));
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddCors();
-builder.Services.AddMediatR(opt => 
+builder.Services.AddMediatR(opt =>
     opt.RegisterServicesFromAssemblyContaining<GetEventList.Handler>()
 );
 builder.Services.AddApplicationMapper();

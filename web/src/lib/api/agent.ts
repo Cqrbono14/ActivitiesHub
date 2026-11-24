@@ -16,7 +16,7 @@ agent.interceptors.request.use((config) => {
   return config
 })
 
-agent.interceptors.request.use(async (response) => {
+agent.interceptors.response.use(async (response) => {
   try {
     await sleep(1000)
     return response
